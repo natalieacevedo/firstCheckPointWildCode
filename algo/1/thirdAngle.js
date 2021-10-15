@@ -13,9 +13,12 @@ Exemple :
 thirdAngle(90, 30) doit renvoyer 60
 thirdAngle(20, 80) doit renvoyer 80
 */
-
 function thirdAngle(a, b) {
-  // TODO
+  
+  let sum = a + b;
+
+  return 180 - sum;
+
 }
 
 module.exports = thirdAngle;
