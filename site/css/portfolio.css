@@ -70,6 +70,15 @@
 
 img {
   max-width: 100%;
+  /* display: block;
+  margin-left: auto;
+  margin-right: auto; */
+}
+
+.introductionpic{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .projects a {
@@ -111,3 +120,26 @@ button {
 }
 
 /* CODE HERE */
+
+ .menu {
+display: flex;
+position: relative;
+left: 80vw;
+} 
+
+figure{
+  position: relative;
+  right: 50px;
+}
+
+#presentation{
+  right: 50px;
+  position: relative;
+}
+
+
+@media screen and (max-width: 700px) {
+  .desktop{
+    display: none;
+  }
+}
