@@ -156,6 +156,15 @@ figure{
   .skills {
     display: flex;
     justify-content: center;
+    flex-direction: row-reverse;
   }
 }
 
+.disabled{
+  opacity: 0.5;
+}
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
