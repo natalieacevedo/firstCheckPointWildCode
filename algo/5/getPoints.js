@@ -40,7 +40,41 @@ const scores = [
 ];
 
 function getPoints(array) {
-  // TODO
+
+  let final = 0;
+
+
+  let toCadena = array.join().split(',');
+
+//  let clasificados = toCadena.map(el => {
+
+//    if (parseInt(el[0]) > parseInt(el[2])){
+//     // return el[0] + 'mayor' ;
+//      return [el[0]]
+    
+//    } else if (parseInt(el[0]) >= parseInt(el[2])){
+//     // return el[0] + 'igual';
+     
+//    }
+//  })
+  
+//   return clasificados;
+  for (let i = 0; i < toCadena.length; i++){
+    console.log(toCadena[i][0]);
+    if (parseInt(toCadena[i][0]) > parseInt(toCadena[i][2])) {
+      final += 3;
+   
+    } else if (parseInt(toCadena[i][0]) === parseInt(toCadena[i][2])) {
+      final += 1;
+    }
+
+  }
+
+  return final;
+
+
 }
 
 module.exports = getPoints;
+
+console.log(getPoints(scores));

@@ -40,4 +40,7 @@ function theaterSeats() {
   
 }
 
+console.log(theaterSeats());
+
+
 module.exports = theaterSeats;
